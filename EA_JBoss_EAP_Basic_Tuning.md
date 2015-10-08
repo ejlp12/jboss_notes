@@ -2,13 +2,14 @@ EA_JBoss_EAP_Basic_Tuning
 
 ### JVM Heap Size
 
-Change minimum and maximum JVM heap size in `bin/standalone.conf` or `bin/standalone.conf.bat` (In Windows)
+Ubah ukuran heap memory dari JVM di file `bin/standalone.conf` atau `bin/standalone.conf.bat` (di Windows) dengan mengubah nilai pada `-Xms` (minimum) dan `-Xmx` (maksimum) misalnya:
+
 
 ```
 # Specify options to pass to the Java VM.
 #
 if [ "x$JAVA_OPTS" = "x" ]; then
-	JAVA_OPTS="-Xms1024m -Xmx1024m -XX:MaxPermSize=256m -XX:NewRatio=2 -XX:PermSize=64m -Djava.net.preferIPv4Stack=true"
+	JAVA_OPTS="-Xms1024m -Xmx3072m -XX:MaxPermSize=256m -XX:NewRatio=2 -XX:PermSize=64m -Djava.net.preferIPv4Stack=true"
  	JAVA_OPTS="$JAVA_OPTS -Djboss.modules.system.pkgs=$JBOSS_MODULES_SYSTEM_PKGS -Djava.awt.headless=true"
 else
  	echo "JAVA_OPTS already set in environment; overriding default settings with values: $JAVA_OPTS"
