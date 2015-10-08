@@ -1,6 +1,6 @@
 EA_JBoss_EAP_Basic_Tuning
 
-## JVM Heap Size
+### JVM Heap Size
 
 Change minimum and maximum JVM heap size in `bin/standalone.conf` or `bin/standalone.conf.bat` (In Windows)
 
@@ -12,10 +12,11 @@ if [ "x$JAVA_OPTS" = "x" ]; then
  	JAVA_OPTS="$JAVA_OPTS -Djboss.modules.system.pkgs=$JBOSS_MODULES_SYSTEM_PKGS -Djava.awt.headless=true"
 else
  	echo "JAVA_OPTS already set in environment; overriding default settings with values: $JAVA_OPTS"
-fi```
+fi
+```
 
 
-## Konfigurasi data source & connection pool:
+### Konfigurasi data source & connection pool:
 
 1. Set connection pool min & max size. Dengan mendefinisikan parameter ini, pembuatan object koneksi ke database jadi lebih efisien.
    Nilai min & max harus di-tuning dengan cara memonitor penggunaan koneksi pada saat load test.
@@ -42,7 +43,7 @@ fi```
  </datasources>
 ```
 
-## Disable deployment scanner:
+### Disable deployment scanner:
 
 Pada mode Domain, deployment scanner secara default tidak diaktifkan. Jika anda menggunakan mode *standalone*, anda bisa mematikan fasilitas ini agar tidak memberatkan server atau mengubah `scan-interval` agar tidak terlalu sering melakukan pengecekan ke folder deployment.
 
