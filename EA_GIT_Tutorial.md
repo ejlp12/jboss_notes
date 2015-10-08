@@ -30,10 +30,9 @@ https://www.gitignore.io/
 
 
 
-Mengecek remote git repository: `git remote -v`
-
-Menambahkan semua file (rekursif) ke repository: `git add -A `
-Melihat status perubahan yang akan dilakukan: `git status`
-Meng-commit perubahan: `git commit -m "Komentar..."`
-Push ke master: `git push origin master`
-Mengganti file di lokal dengan file orisinal dari repository: `git checkout -- <filename>`
+- Mengecek remote git repository: `git remote -v`
+- Menambahkan semua file (rekursif) ke repository: `git add -A `
+- Melihat status perubahan yang akan dilakukan: `git status`
+- Meng-commit perubahan: `git commit -m "Komentar..."`
+- Push ke master: `git push origin master`
+- Mengganti file di lokal dengan file orisinal dari repository: `git checkout -- <filename>`
