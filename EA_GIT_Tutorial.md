@@ -25,10 +25,11 @@ https://www.gitignore.io/
 
 + Create repository di github.com
 + Copy ULR, misalnya 
-
 + Buat file .gitignore yang isinya bisa digenerate dari [gitignore.io](https://www.gitignore.io/)
 
 
+
+Beberapa perintah yang sering digunakan:
 
 - Mengecek remote git repository: `git remote -v`
 - Menambahkan semua file (rekursif) ke repository: `git add -A `
