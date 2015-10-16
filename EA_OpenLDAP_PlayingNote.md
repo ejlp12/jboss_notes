@@ -350,3 +350,33 @@ result: 0 Success
 # numResponses: 7
 # numEntries: 6
 ```
+
+
+```
+> ldapsearch -x -b 'cn=Susan Adams,ou=people,dc=somedomain,dc=org' -h localhost -p 389 '(objectclass=*)'
+# extended LDIF
+#
+# LDAPv3
+# base <cn=Susan Adams,ou=people,dc=somedomain,dc=org> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# Susan Adams, people, somedomain.org
+dn: cn=Susan Adams,ou=people,dc=somedomain,dc=org
+objectClass: inetOrgPerson
+cn: Susan Adams
+sn: Adams
+givenName: Susan
+uid: sadams
+userPassword:: MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY=
+mail: sadams@somedomain.org
+description: This is Sue
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2
+# numEntries: 1
+```
