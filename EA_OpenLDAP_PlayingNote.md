@@ -279,6 +279,8 @@ ldap_add: Object class violation (65)
 	additional info: object class 'groupOfNames' requires attribute 'member'
 ```
 
+ldapsearch -x -b <BASE_SEARCH> -h <HOST> -p <PORT> <FILTER_SEARCH>
+
 ```
 > ldapsearch -x -b 'dc=somedomain,dc=org' '(objectclass=*)'
 # extended LDIF
@@ -372,6 +374,35 @@ uid: sadams
 userPassword:: MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY=
 mail: sadams@somedomain.org
 description: This is Sue
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2
+# numEntries: 1
+```
+
+```
+> ldapsearch -x -b 'dc=somedomain,dc=org' -h localhost -p 389 'mail=badams@somedomain.org'
+# extended LDIF
+#
+# LDAPv3
+# base <dc=somedomain,dc=org> with scope subtree
+# filter: mail=badams@somedomain.org
+# requesting: ALL
+#
+
+# Bob Adams, people, somedomain.org
+dn: cn=Bob Adams,ou=people,dc=somedomain,dc=org
+objectClass: inetOrgPerson
+cn: Bob Adams
+sn: Adams
+givenName: Bob
+uid: badams
+userPassword:: MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY=
+mail: badams@somedomain.org
+description: This is Bob
 
 # search result
 search: 2
