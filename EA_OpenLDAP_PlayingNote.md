@@ -411,3 +411,22 @@ result: 0 Success
 # numResponses: 2
 # numEntries: 1
 ```
+
+
+## Menghapus semua data di LDAP server
+
+Lihat file `slapd.conf` dan cari bari seperti ini yang menunjukan dimana LDAP server menaruh database file:
+
+```
+directory       /private/var/db/openldap/openldap-data
+```
+
+Stop LDAP server dahulu, lalu hapus semua file di direktori `/private/var/db/openldap/openldap-data`, **kecuali** file DB_CONFIG
+
+```
+$su - root
+root# cd /private/var/db/openldap/openldap-data
+root# rm -f alock dn2id.bdb id2entry.bdb log.0000000001 objectClass.bdb __db.00*
+``
+
+Start kembali LDAP server.
