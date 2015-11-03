@@ -427,6 +427,6 @@ Stop LDAP server dahulu, lalu hapus semua file di direktori `/private/var/db/ope
 $su - root
 root# cd /private/var/db/openldap/openldap-data
 root# rm -f alock dn2id.bdb id2entry.bdb log.0000000001 objectClass.bdb __db.00*
-``
+```
 
 Start kembali LDAP server.
