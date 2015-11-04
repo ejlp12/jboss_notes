@@ -412,6 +412,11 @@ result: 0 Success
 # numEntries: 1
 ```
 
+```
+ldapsearch -b 'dc=somedomain,dc=org' -D "cn=people,dc=somedomain,dc=org" -w secret uid=sadams
+```
+
+
 
 ## Menghapus semua data di LDAP server
 
@@ -430,3 +435,45 @@ root# rm -f alock dn2id.bdb id2entry.bdb log.0000000001 objectClass.bdb __db.00*
 ```
 
 Start kembali LDAP server.
+
+
+```
+$ ldapsearch -b 'dc=somedomain,dc=org' -D "cn=people,dc=somedomain,dc=org" -w secret uid=sadams
+# extended LDIF
+#
+# LDAPv3
+# base <dc=somedomain,dc=org> with scope subtree
+# filter: uid=sadams
+# requesting: ALL
+#
+
+# Susan Adams, people, somedomain.org
+dn: cn=Susan Adams,ou=people,dc=somedomain,dc=org
+objectClass: inetOrgPerson
+cn: Susan Adams
+sn: Adams
+givenName: Susan
+uid: sadams
+mail: sadams@somedomain.org
+description: This is Sue
+userPassword:: UGFzc3cwcmQh
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2
+# numEntries: 1
+```
+
+Changing password
+
+```
+$ ldapmodify -D "cn=people,dc=somedomain,dc=org" -w secret
+dn: cn=Susan Adams,ou=people,dc=somedomain,dc=org
+changetype:modify
+replace:userPassword
+userpassword:Passw0rd!
+^D
+modifying entry "cn=Susan Adams,ou=people,dc=somedomain,dc=org"
+```
