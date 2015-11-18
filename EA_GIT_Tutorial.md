@@ -32,8 +32,11 @@ https://www.gitignore.io/
 Beberapa perintah yang sering digunakan:
 
 - Mengecek remote git repository: `git remote -v`
+- Update repository lokal: `git pull origin master`
+- Resolve konflik perbedaan file: `git mergetool`
 - Menambahkan semua file (rekursif) ke repository: `git add -A `
 - Melihat status perubahan yang akan dilakukan: `git status`
 - Meng-commit perubahan: `git commit -m "Komentar..."`
 - Push ke master: `git push origin master`
 - Mengganti file di lokal dengan file orisinal dari repository: `git checkout -- <filename>`
+
