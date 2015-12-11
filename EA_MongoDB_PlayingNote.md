@@ -3,7 +3,9 @@
 ## Menjalankan MongoDB 
 
 Buat direktori untuk menyimpan data, lalu jalankan MongoDB dengan perintah `mongod`
+
 MongoDB akan menggunakan default direktori data yaitu di `/data/db` jika kita tidak memberikan opsi `--dbpath`
+
 Default port yang digunakan MongoDB adalah 2717, gunakan opsi `--port <port>` untuk menggunakan port lain.
 
 ```
