@@ -25,28 +25,27 @@ $ git push origin master
 
 1. Buat repository di GitHub
 
-Di local directory project lakukan perintah berikut:
-
 2. Enable git untuk direktori project:
-```
-$ cd new_project
-$ git init
-```
+   Di local directory project lakukan perintah berikut:
+   ```
+   $ cd new_project
+   $ git init
+   ```
 3. Buat file `.gitignore` yang isinya bisa digenerate dari [gitignore.io](https://www.gitignore.io/)
 
 4. Masukan semua file ke git
-```
-$ git add .
-$ git commit -m "Initial commit"
-```
+   ```
+   $ git add .
+   $ git commit -m "Initial commit"
+   ```
 5. Set remote git repository
-```
-$ git remote add origin https://github.com/ejlp12/nama_project.git
-```
+   ```
+   $ git remote add origin https://github.com/ejlp12/nama_project.git
+   ```
 6. Push semua file ke remote git repository
-```
-$ git push origin master
-```
+   ```
+   $ git push origin master
+   ```
 
 
 
