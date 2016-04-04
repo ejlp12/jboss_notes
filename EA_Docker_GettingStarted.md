@@ -10,6 +10,7 @@ boot2docker init
 boot2docker up
 ```
 
+```
 ejlp12-host:bin eariobow$ brew update
 Initialized empty Git repository in /usr/local/.git/
 remote: Counting objects: 212028, done.
@@ -23,7 +24,9 @@ From https://github.com/Homebrew/homebrew
  * [new branch]      master     -> origin/master
 HEAD is now at 7ed0583 Exclude documentation from `brew list --unbrewed`
 Already up-to-date.
+```
 
+```
 ejlp12-host:bin eariobow$ brew install docker
 ==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/docker-1.3.1.mavericks.bottle.tar.gz
 ######################################################################## 100.0%
@@ -36,7 +39,9 @@ zsh completion has been installed to:
   /usr/local/share/zsh/site-functions
 ==> Summary
 🍺  /usr/local/Cellar/docker/1.3.1: 9 files, 6.8M
+```
 
+```
 ejlp12-host:bin eariobow$ brew install boot2docker
 ==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/boot2docker-1.3.1.mavericks.bottle.3.tar.gz
 ######################################################################## 100.0%
@@ -48,7 +53,9 @@ Then to load boot2docker now:
     launchctl load ~/Library/LaunchAgents/homebrew.mxcl.boot2docker.plist
 ==> Summary
 🍺  /usr/local/Cellar/boot2docker/1.3.1: 3 files, 7.2M
+```
 
+```
 ejlp12-host:bin eariobow$ boot2docker init
 Latest release for boot2docker/boot2docker is v1.3.1
 Downloading boot2docker ISO image...
@@ -83,10 +90,14 @@ To connect the Docker client to the Docker daemon, please set:
     export DOCKER_HOST=tcp://192.168.59.103:2376
     export DOCKER_CERT_PATH=/Users/eariobow/.boot2docker/certs/boot2docker-vm
     export DOCKER_TLS_VERIFY=1
+```
 
+```
 ejlp12-host:bin eariobow$ export DOCKER_HOST=tcp://192.168.59.103:2376
 ejlp12-host:bin eariobow$ export DOCKER_CERT_PATH=/Users/eariobow/.boot2docker/certs/boot2docker-vm
+```
 
+```
 ejlp12-host:bin eariobow$ docker info
 Containers: 0
 Images: 0
@@ -102,10 +113,14 @@ Fds: 10
 Goroutines: 11
 EventsListeners: 0
 Init Path: /usr/local/bin/docker
+```
 
+```
 ejlp12-host:bin eariobow$ docker ps
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+```
 
+```
 ejlp12-host:bin eariobow$ docker run -d -P --name web nginx
 Unable to find image 'nginx' locally
 nginx:latest: The image you are pulling has been verified
@@ -124,14 +139,19 @@ ef45dc12127b: Pull complete
 e426f6ef897e: Pull complete 
 Status: Downloaded newer image for nginx:latest
 458288e1586b57dce773b52577682781ba66fbadcfce4e6a7f856c2ef33fba66
+```
 
+```
 ejlp12-host:bin eariobow$ docker ps
 CONTAINER ID        IMAGE               COMMAND                CREATED             STATUS              PORTS                                           NAMES
 458288e1586b        nginx:latest        "nginx -g 'daemon of   38 minutes ago      Up 9 minutes        0.0.0.0:49153->443/tcp, 0.0.0.0:49154->80/tcp   web
+```
+
+```
 ejlp12-host:bin eariobow$ echo $(boot2docker ip 2>/dev/null) dockerhost | sudo tee -a /etc/hosts
 Password:
 192.168.59.103 dockerhost
-
+```
 
 ####################################################################
 
