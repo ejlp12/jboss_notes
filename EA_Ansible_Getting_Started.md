@@ -1,4 +1,38 @@
+## Instalasi Ansible
 
+Ansible adalah program untuk automation yang dibuat menggunakan bahasa pemrograman Python. Untuk menginstal Ansible paling mudah di Mac OS-X adalah menggunakan Homebrew, caranya cukup satu baris perintah:
+
+```
+brew install ansible
+```
+
+Cara lain adalah dengan menginstall menggunakan *pip*
+
+*pip* adalah sistem management pemaketan (package management system) yang digunakan untuk menginstal dan mengelola paket software (library atau module) yang dibuat menggunakan Python.
+
+Biasanya di Mac OS-X terbaru, Python sudah terinstal (jika belum maka anda belum beruntung, silakan install Python terlebih dahulu) sehingga kita bisa langsung menginstall ansible dengan perintah berikut:
+
+Upgrade pip:
+```
+sudo pip install --upgrade pip
+```
+
+Install ansible, jika ansible sudah ada maka perintah ini akan mengupgrade ansible ke versi terbaru:
+```
+sudo pip install ansible --upgrade
+```
+
+Setelah selesai, coba test ansible dengan perintah `ansible --version`
+
+```
+$ ansible --version
+ansible 2.0.1.0
+  config file =
+  configured module search path = Default w/o overrides
+```
+
+
+## Memulai Menjalankan Ansible
 
 Test ansible dengan menjalankan perintah satu baris berikut:
 
