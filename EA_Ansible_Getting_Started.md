@@ -1,6 +1,8 @@
-## Instalasi Ansible
+## Instalasi Ansible di Mac OS-X
 
-Ansible adalah program untuk automation yang dibuat menggunakan bahasa pemrograman Python. Untuk menginstal Ansible paling mudah di Mac OS-X adalah menggunakan Homebrew, caranya cukup satu baris perintah:
+Ansible adalah program untuk melakukan otomasi pekerjaan di beberapa mesin atau host yang dibuat menggunakan bahasa pemrograman Python. 
+
+Untuk menginstal Ansible paling mudah di Mac OS-X adalah menggunakan Homebrew, caranya cukup satu baris perintah:
 
 ```
 brew install ansible
