@@ -1,9 +1,12 @@
+
 [Download Maven site](http://maven.apache.org/download.cgi)
+
+Membuat project aplikasi web (Java EE) dengan menggunakan Maven
 
 `mvn archetype:generate -DgroupId=com.ejlp12 -DartifactId=HelloWebApp -DarchetypeArtifact=maven-archetype-webapp -DinteractiveMode=false`
 
 `cd HelloWebApp
-mvm package`
+mvn package`
 
 ```
 .
