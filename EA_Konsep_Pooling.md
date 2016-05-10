@@ -14,8 +14,7 @@ perhitungan di aplikasi X akan terpengaruh oleh cepat atau lambatnya pemanggilan
 ![image](https://cloud.githubusercontent.com/assets/3068071/15131797/56bc2574-167d-11e6-8d7b-da90b9e73089.png)
 
 Semakin lama sistem Y dan Z meresponse maka semakin lama juga sebuah proses perhitungan di sistem X dilakukan. Jika proses perhitungan 
-tersebut sangat banyak dan dilakukan bersamaan maka dalam satu rentang waktu jumlah proses yang bisa diselesaikan menjadi lebih sedikit
-jika waktu penyelesaian sebuah proses semakin lama.
+tersebut sangat banyak dan dilakukan bersamaan maka **dalam satu rentang waktu tententu jumlah proses yang bisa diselesaikan menjadi lebih sedikit jika waktu penyelesaian sebuah proses semakin lama**.
 
 
 Masalah keterbatasan sumber daya (resource) ini adalah masalah yang umum pada aplikasi. Kita harus menjaga aplikasi yang kita buat dan
