@@ -1,9 +1,8 @@
 Suatu sistem atau aplikasi yang menangani request yang sangat banyak dalam waktu yang bersamaan (concurrent), misalnya aplikasi web,
-biasanya memiliki keterbatasan kemampuan memproses dikarenakan adanya **keterbatasan kemampuan pemrosesan dari sumberdaya perangkat keras (hardware resources)** seperti CPU (yang tergantung jenis dan banyaknya core), besarnya memori (RAM), disk I/O dan network I/O/
+biasanya memiliki keterbatasan kemampuan memproses dikarenakan adanya **keterbatasan kemampuan pemrosesan dari sumberdaya perangkat 
+keras (hardware resources)** seperti CPU (yang tergantung jenis dan banyaknya core), besarnya memori (RAM), disk I/O dan network I/O/
 
-![image](https://cloud.githubusercontent.com/assets/3068071/11893212/4e9a11fa-a5a1-11e5-948e-8449c86cb142.png)
-
-
+![image](https://cloud.githubusercontent.com/assets/3068071/15131944/8a135842-167e-11e6-8b35-3ab0fb5441fb.png)
 
 Selain itu aplikasi yang menangani proses yang bergantung pada sistem lain --misalnya database atau aplikasi lain-- juga memiliki 
 keterbatasan dikarenakan **batasan kemampuan eksternal sistem lain** tersebut. 
@@ -19,10 +18,9 @@ tersebut sangat banyak dan dilakukan bersamaan maka dalam satu rentang waktu jum
 jika waktu penyelesaian sebuah proses semakin lama.
 
 
-
 Masalah keterbatasan sumber daya (resource) ini adalah masalah yang umum pada aplikasi. Kita harus menjaga aplikasi yang kita buat dan
-jalankan di lingkungan produksi agar tetap berjalan stabil (tidak overload). Lebih baik untuk sebuah aplikasi untuk selalu bisa menangani
-request dan menolak request lainnya dibandingkan aplikasi mati dan tidak bisa menangani request sama sekali.
+jalankan di lingkungan produksi agar tetap berjalan stabil (tidak overload). Lebih baik untuk sebuah aplikasi untuk selalu bisa 
+menangani request dan menolak request lainnya dibandingkan aplikasi mati dan tidak bisa menangani request sama sekali.
 
 Untuk mengoptimalkan penggunaan resource baik internal maupun eksternal maka biasanya sebuah aplikasi menggunakan teknik **pooling**. 
 Teknik pooling memiliki beberapa konsep penting yaitu:
