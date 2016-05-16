@@ -10,14 +10,6 @@
     What is your first and last name?
       [Unknown]:  http://www.ejlp12.com
     What is the name of your organizational unit?
-      [Unknown]:  EJLP12
-    What is the name of your organization?
-      [Unknown]:  ^C________________________________________________________________________________
-    | ejlp12 @ ejlp-macbook:/Servers/EAP-6.4/bin
-    | => keytool -genkey -keyalg RSA -alias jboss -keystore D:\keystore.jks -storepass secret -validity 3650 -keysize 2048
-    What is your first and last name?
-      [Unknown]:  http://www.ejlp12.com
-    What is the name of your organizational unit?
       [Unknown]:  My WWW
     What is the name of your organization?
       [Unknown]:  EJLP12
@@ -54,6 +46,8 @@
                          certificate-file="${jboss.server.base.dir}/configuration/keystore.jks"/>
                 </connector>
     ```
+    
+    > Nilai `key-alias` dan `password` yang ada di elemen `ssl` tersebut harus sama dengan nilai yang digunakaan saat men-generate jks file (nilai pada argument `-alias` dan `-storepass`)
 
     Sehingga menjadi konfigurasi menjadi seperti ini:
     ```
