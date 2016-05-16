@@ -1,6 +1,10 @@
 # Mengkonfigurasi HTTPS/SSL pada JBoss EAP 
 
+
 > Berikut ini adalah tutorial untuk membuat aplikasi web yang di deploy di JBoss EAP dapat diakses melalui HTTPS.
+> Certificate yang akan digunakan adalah self signed certificate yang sebaiknya digunakan hanya untuk keperluan test atau development environment.
+
+
 
 1. Buat self signed certificate dengan `keytool`, sebuah tool dari Java (JDK), di direktori `<JBOSS_EAP_HOME>/standalone/configuration`
 
