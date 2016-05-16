@@ -79,4 +79,7 @@
             </subsystem>
     ```
 
-3. Restart JBoss EAP
+3. Pastikan di bagian bawah konfigurasi
+
+   
+4. Restart JBoss EAP
