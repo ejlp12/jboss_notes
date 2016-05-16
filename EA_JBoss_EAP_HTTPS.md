@@ -27,10 +27,12 @@
     Re-enter new password:
     ```
 
-    The keystore is generated in the current directory
+    Cukup enter pada saat ditanya key password. 
+    
+    Setelah selesai keystore file (dengan ekstensi `.jks`) akan di-generate di current directory:
 
     ```
-    ls -la keystore.jks
+    $ ls -la keystore.jks
     -rw-------  1 ejlp12  wheel  2258 May 16 11:45 keystore.jks
     ```
 
@@ -48,8 +50,10 @@
     ```
     
     > Nilai `key-alias` dan `password` yang ada di elemen `ssl` tersebut harus sama dengan nilai yang digunakaan saat men-generate jks file (nilai pada argument `-alias` dan `-storepass`)
+    
+    > Jika menggunakan FQDN (hostname) maka masukan juga elemen alias di elemen `virtual-server` misal `<alias name="www.ejlp12.com"/>`
 
-    Sehingga menjadi konfigurasi menjadi seperti ini:
+    Sehingga konfigurasi menjadi seperti ini:
     ```
             <subsystem xmlns="urn:jboss:domain:web:2.2" default-virtual-server="default-host" native="false">
                 <configuration>
