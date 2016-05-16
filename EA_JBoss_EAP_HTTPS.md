@@ -81,5 +81,11 @@
 
 3. Pastikan di bagian bawah konfigurasi
 
+     ```
+     <socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
+        ...
+        <socket-binding name="https" port="8443"/>
+        ...
+     ```
    
-4. Restart JBoss EAP
+4. Restart JBoss EAP dan akses [http://localhost:8443](http://localhost:8443)
