@@ -71,5 +71,5 @@ Ada beberapa log file yang dapat dihasilkan oleh JBoss EAP.
    -XX:-TraceClassUnloading"
    ```
 
-
+  - [](http://blog.c2b2.co.uk/2016/05/jboss-logging-and-best-practice-for-eap.html)
 
