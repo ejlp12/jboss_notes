@@ -2,6 +2,10 @@ Ada beberapa log file yang dapat dihasilkan oleh JBoss EAP.
 
 ## Console log
   
+  Console log secara default akan ditampilkan di standar output (terminal) jika kita jalankan EAP dari command line (`standalone.sh` atau `domain.sh`)
+  
+  ![image](https://cloud.githubusercontent.com/assets/3068071/15353439/411abf04-1d13-11e6-92c0-798622c56608.png)
+  
   Jika menggunakan script `jboss-as-standalone.sh` atau `jboss-as-domain.sh` yang ada di `<EAP_HOME>/bin/init.d/` sebagai wrapper untuk men-start JBoss EAP, console log akan disimpan di file `/var/log/jboss-as/console.log`. 
   
   Konfigurasi start/stop wrapper script tersebut ada di `<EAP_HOME>/bin/init.d/jboss-as.conf`
