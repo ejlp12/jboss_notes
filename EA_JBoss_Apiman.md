@@ -1,6 +1,17 @@
+Install JBoss EAP di `~/apiman-1.2.5.Final/jboss-eap-7.0`
 
+Download dan install Apiman
 
-Clone APIMAN Echo Service
+```
+mkdir ~/apiman-1.2.5.Final/
+cd ~/apiman-1.2.5.Final
+curl http://downloads.jboss.org/apiman/1.2.5.Final/apiman-distro-wildfly10-1.2.5.Final-overlay.zip -o apiman-distro-wildfly10-1.2.5.Final-overlay.zip
+unzip -o apiman-distro-wildfly10-1.2.5.Final-overlay.zip -d jboss-eap-7.0
+cd jboss-eap-7.0
+./bin/standalone.sh -c standalone-apiman.xml
+```
+
+Clone Echo Service Quickstart project:
 ```
 cd /tmp
 git clone https://github.com/apiman/apiman-quickstarts.git
