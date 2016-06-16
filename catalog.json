@@ -151,7 +151,7 @@
       "endpointType" : "rest",
       "name" : "Swagger PetStore API",
       "description" : "An example API from Swagger",
-      "definitionUrl" : "http://petstore.swagger.io/v2/swagger.json",
+      "definitionUrl" : "http://petstore.swagger.io/",
       "definitionType" : "External",
       "tags" : [ "storage" ]
     }
