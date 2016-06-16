@@ -146,10 +146,10 @@
     },
     {
       "id" : "swagger-petstore",
-      "icon" : "http://www.rmws.nl/wp-content/uploads/2015/01/RM-Web-Services-Amazon-S3.png",
+      "icon" : "http://petstore.swagger.io/images/logo_small.png",
       "endpoint" : "http://petstore.swagger.io/v2",
       "endpointType" : "rest",
-      "name" : "Swagger Example PetStore API",
+      "name" : "Swagger PetStore API",
       "description" : "An example API from Swagger",
       "definitionUrl" : "http://petstore.swagger.io/v2/swagger.json",
       "definitionType" : "External",
