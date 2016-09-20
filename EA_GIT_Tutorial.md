@@ -1,5 +1,8 @@
 # GIT Tutorial
 
+Mau belajar GIT? berikut video tutorial yang cukup bagus (tidak bertele-tele) untuk memulai belajar praktek menggunakan GIT dan GITHUB:
+* https://www.youtube.com/playlist?list=PLfdtiltiRHWFEbt9V04NrbmksLV4Pdf3j
+
 ```
 $ mkdir newrepo.git
 $ cd newrepo.git
@@ -52,11 +55,10 @@ $ git push origin master
    ```
 
 
-
 ### Beberapa perintah yang sering digunakan
 
 - Mengecek remote git repository: `git remote -v`
-- Update repository lokal: `git pull origin master`
+- Update repository lokal: `git pull origin master` atau `git pull`
 - Resolve konflik perbedaan file: `git mergetool`
 - Menambahkan semua file (rekursif) ke repository: `git add -A `
 - Melihat status perubahan yang akan dilakukan: `git status`
@@ -64,3 +66,16 @@ $ git push origin master
 - Push ke master: `git push origin master`
 - Mengganti file di lokal dengan file orisinal dari repository: `git checkout -- <filename>`
 
+- Membuat branch: `git branch <branch-name>`
+- Pindah ke branch working directory: `git checkout <branch-name>`
+- Melihat branch name dari working directory: `git branch` atau `git status`
+- Push ke git repository: `git push origin <branch-name>`
+
+- Menghapus branch di lokal: `git branch -d <branch-name>`
+- Menghapus branch di git repository: `git push origin --delete <branch-name>`
+
+### One time setup
+```
+git config --global user.name "ejlp12"
+git config --global user.email "ejlp12@gmail.com"
+```
