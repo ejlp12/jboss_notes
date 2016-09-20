@@ -65,12 +65,14 @@ $ git push origin master
 - Meng-commit perubahan: `git commit -m "Komentar..."`
 - Push ke master: `git push origin master`
 - Mengganti file di lokal dengan file orisinal dari repository: `git checkout -- <filename>`
---
+
+*TAG*
 - Membuat tag: `git tag <tag-name>`
 - Melihat daftar tag yang ada `git tag`
 - Pindah ke suatu tag: `git checkout <tag-name>`
 - Push tag ke git repository: `git push --tag` atau `git push origin <tag-name>`
---
+
+*BRANCH*
 - Membuat branch: `git branch <branch-name>`
 - Pindah ke branch working directory: `git checkout <branch-name>`
 - Melihat branch name dari working directory: `git branch` atau `git status`
