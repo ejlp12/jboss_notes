@@ -1,5 +1,7 @@
 EA_JBoss_EAP_Basic_Tuning
 
+>> JBoss EAP 6.X
+
 ### JVM Heap Size
 
 Ubah ukuran heap memory dari JVM di file `bin/standalone.conf` atau `bin/standalone.conf.bat` (di Windows) dengan mengubah nilai pada `-Xms` (minimum) dan `-Xmx` (maksimum) misalnya:
@@ -24,7 +26,7 @@ fi
 2. Set agar query yang dijalankan menggunakan prepared statement akan di-cache sehingga lebih cepat.
    Nilai ini akan membantu jika di kode aplikasi kita banyak menggunakan object PreparedStatement untuk menjalankan query database
 3. Set flush-strategy menjadi IdleConnections agar jika ada koneksi yang error dan idle akan di-flush dari pool
-4. Set idle-timeout-minutes agar koneksi yang idle (tidak digunakan) dibuang dari pool. 
+4. Set idle-timeout-minutes agar koneksi yang idle (tidak digunakan) dibuang dari pool.
    Kadang koneksi yang idle sebenarnya sudah tidak valid karena koneksi sudah dibuang di sisi database (konfigurasi timeout di database)
 5. Set query-timeout agar koneksi yang digunakan untuk query yang terlalu lama akan distop sehingga tidak menghabiskan pool
 
@@ -67,20 +69,20 @@ Edit the standalone.xml file in the WildFly /standalone/configuration/ directory
        <stateless>
            <bean-instance-pool-ref pool-name="slsb-strict-max-pool"/>
        </stateless>
-       <stateful default-access-timeout="5000" 
-                 cache-ref="simple" 
+       <stateful default-access-timeout="5000"
+                 cache-ref="simple"
                  passivation-disabled-cache-ref="simple"/>
        <singleton default-access-timeout="5000"/>
    </session-bean>
    <pools>
        <bean-instance-pools>
-           <strict-max-pool name="slsb-strict-max-pool" 
-                            max-pool-size="32" 
-                            instance-acquisition-timeout="5" 
+           <strict-max-pool name="slsb-strict-max-pool"
+                            max-pool-size="32"
+                            instance-acquisition-timeout="5"
                             instance-acquisition-timeout-unit="MINUTES"/>
-           <strict-max-pool name="mdb-strict-max-pool" 
-				           max-pool-size="20" 
-				           instance-acquisition-timeout="5" 
+           <strict-max-pool name="mdb-strict-max-pool"
+				           max-pool-size="20"
+				           instance-acquisition-timeout="5"
 				           instance-acquisition-timeout-unit="MINUTES"/>
        </bean-instance-pools>
     </pools>
