@@ -75,7 +75,7 @@ $ git push origin master
 *BRANCH*
 - Membuat branch: `git branch <branch-name>`
 - Pindah ke branch working directory: `git checkout <branch-name>`
-- Melihat branch name dari working directory: `git branch` atau `git status`
+- Melihat branch name dari working directory: `git branch -v -a` atau `git status`
 - Push branch ke git repository: `git push origin <branch-name>`
 - Menghapus branch di lokal: `git branch -d <branch-name>`
 - Menghapus branch di git repository: `git push origin --delete <branch-name>`
