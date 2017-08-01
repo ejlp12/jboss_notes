@@ -80,6 +80,9 @@ $ git push origin master
 - Menghapus branch di lokal: `git branch -d <branch-name>`
 - Menghapus branch di git repository: `git push origin --delete <branch-name>`
 
+*Remote*
+- Change the **remote origin**, first remove it: `git remote rm origin`
+
 ### One time setup
 ```
 git config --global user.name "ejlp12"
