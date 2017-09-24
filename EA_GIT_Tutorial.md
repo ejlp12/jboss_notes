@@ -88,3 +88,24 @@ $ git push origin master
 git config --global user.name "ejlp12"
 git config --global user.email "ejlp12@gmail.com"
 ```
+
+``
+git config --global core.excludesfile ~/.gitignore
+
+cat <<EOF > ~/.gitignore
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+*~
+*.swp
+*.swo
+
+log/
+*.log
+EOF
+``
