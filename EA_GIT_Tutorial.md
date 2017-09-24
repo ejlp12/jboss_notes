@@ -89,7 +89,7 @@ git config --global user.name "ejlp12"
 git config --global user.email "ejlp12@gmail.com"
 ```
 
-``
+```
 git config --global core.excludesfile ~/.gitignore
 
 cat <<EOF > ~/.gitignore
@@ -108,4 +108,4 @@ Thumbs.db
 log/
 *.log
 EOF
-``
+```
