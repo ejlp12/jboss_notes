@@ -1,4 +1,6 @@
-# GIT Tutorial
+# GIT Cheatsheet 
+
+### GIT Tutorial
 
 Mau belajar GIT? berikut video tutorial yang cukup bagus (tidak bertele-tele) untuk memulai belajar praktek menggunakan GIT dan GITHUB:
 * https://www.youtube.com/playlist?list=PLfdtiltiRHWFEbt9V04NrbmksLV4Pdf3j
