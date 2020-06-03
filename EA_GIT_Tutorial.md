@@ -75,6 +75,8 @@ $ git push origin master
 - Push tag ke git repository: `git push --tag` atau `git push origin <tag-name>`
 
 *BRANCH*
+- Melihat daftar branch: `git branch -a` or `git branch -r`
+- Mengambil (mengupdate) sebuah remote branch: `git pull <branch-name>`
 - Membuat branch: `git branch <branch-name>`
 - Pindah ke branch working directory: `git checkout <branch-name>`
 - Melihat branch name dari working directory: `git branch -v -a` atau `git status`
